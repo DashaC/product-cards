@@ -1,0 +1,103 @@
+.product-card {
+  margin: 10px 5px 5px 10px;
+  padding: 5px;
+  border: 1px solid #D3D3D3;
+  background: white;
+  font-family: "Avenir Next Cyr";
+  overflow: hidden;
+  
+}
+.product-img {transition: 1s ease-in-out;}
+.product-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.product-img img {
+  display: block;
+  width: 100%;
+}
+.product-name {
+  margin-top: 35px;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+a:hover {
+  color: #304FFE;
+}
+.category {
+  font-size: 15px;
+  color: #A9A9A9;
+  margin-top: 5px;
+}
+.category span:hover {
+  cursor: pointer;
+  color: #000000;
+  font-weight: bold;
+}
+.stars-five:before {
+  content: "\2605\2605\2605\2605\2605";
+  color: #EFB71C;
+  font-size: 16px;
+}
+.stars-four:before {
+  content: "\2605\2605\2605\2605\2606";
+  color: #EFB71C;
+  font-size: 16px;
+}
+.stars-three:before {
+  content: "\2605\2605\2605\2606\2606";
+  color: #EFB71C;
+  font-size: 16px;
+}
+.stars-two:before {
+  content: "\2605\2605\2606\2606\2606";
+  color: #EFB71C;
+  font-size: 16px;
+}
+.price {
+  color: #DC143C;
+  font-size: 18px;
+}
+.description {
+  font-size: 15px;
+  margin: 8px 0;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products:after {
+  content: '';
+  flex: auto;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    min-width: 47%;
+    width: 47%;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-card {
+    min-width: 31%;
+    width: 31%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-card {
+    min-width: 23%;
+    width: 23%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    min-width: 96%;
+    width: 96%;
+  }
+}
