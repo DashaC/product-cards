@@ -1,11 +1,11 @@
 .product-card {
-  margin: 10px 5px 5px 10px;
   padding: 5px;
   border: 1px solid #D3D3D3;
   background: white;
   font-family: "Avenir Next Cyr";
   overflow: hidden;
-  
+  box-sizing: border-box;
+  margin: 1rem .25em;
 }
 .product-img {transition: 1s ease-in-out;}
 .product-img:hover {
@@ -69,35 +69,33 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.products:after {
-  content: '';
-  flex: auto;
+.centered {
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 @media (min-width: 768px) {
   .product-card {
-    min-width: 47%;
-    width: 47%;
+    max-width: calc(50.5% -  1em);
   }
 }
 
 @media (min-width: 992px) {
   .product-card {
-    min-width: 31%;
-    width: 31%;
+    max-width: calc(34% -  1em);
   }
 }
 
+
 @media (min-width: 1200px) {
   .product-card {
-    min-width: 23%;
-    width: 23%;
+    max-width: calc(25.4% - 1em);
   }
 }
 
 @media (max-width: 768px) {
   .product-card {
-    min-width: 96%;
-    width: 96%;
+    width: 100%;
   }
 }
+
